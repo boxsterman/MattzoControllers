@@ -1,0 +1,471 @@
+
+===============================================================================
+=====  Sequence 1
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...  
+
+
+Set Ext ADV Parameters - Min/Max Interval: 30ms/30ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 30 ms
+	Primary Advertising Interval Max: 30 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1900 1300 3000 0030 0000 0701 0000  6 ....0..0......
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 30 (0x1E)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 26 (0x1A)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X772A 0X14B2 0X8A3E 0X6BED 0X7B48 
+
+00000000: 3720 1E00 0301 1A02 011A 020A 0C13 03C8  7 ..............
+00000010: 1901 B430 4227 FA2A 77B2 143E 8AED 6B48  ...0B'.*w..>..kH
+00000020: 7B                                       {
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+=====  Sequence 2
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 270 ms
+	Primary Advertising Interval Max: 270 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1900 1300 B001 00B0 0100 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 23 (0x17)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 19 (0x13)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	Apple Manufacturing Data
+	Length: 12 (0x0C)
+
+00000000: 3720 1700 0301 1302 011A 020A 0C0C FF4C  7 .............L
+00000010: 0010 077A 1F7E C026 4648                 ...z.~.&FH
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+
+=====  Sequence 3
+
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+
+Set Ext ADV Parameters - Min/Max Interval: 30ms/30ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 30 ms
+	Primary Advertising Interval Max: 30 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1900 1300 3000 0030 0000 0701 0000  6 ....0..0......
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 30 (0x1E)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 26 (0x1A)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X772A 0X14B2 0X8A3E 0X6BED 0X7B48 
+00000000: 3720 1E00 0301 1A02 011A 020A 0C13 03C8  7 ..............
+00000010: 1901 B430 4227 FA2A 77B2 143E 8AED 6B48  ...0B'.*w..>..kH
+00000020: 7B                                       {
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+	00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+
+=====  Sequence 4
+
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 270 ms
+	Primary Advertising Interval Max: 270 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1900 1300 B001 00B0 0100 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 23 (0x17)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 19 (0x13)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	Apple Manufacturing Data
+	Length: 12 (0x0C)
+00000000: 3720 1700 0301 1302 011A 020A 0C0C FF4C  7 .............L
+00000010: 0010 077A 1F7E C026 4648                 ...z.~.&FH
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+======== Conclusions:
+- a repeating pattern of 
+	1. Set Ext Advertising Disabled  
+	2. Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	3. Set Ext ADV Data - ADV Handle: 0x0  
+	4. Set Ext Advertising Enabled - Handles: 0x0   
+	5. Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	6. Set Ext ADV Data - ADV Handle: 0x3  
+	7. Set Ext Advertising Enabled - Handles: 0x3   
+- for 2. the min/max interval alternates between 270ms/270m and 30ms/30ms
+- for 3. the payload alternates between sequences:
+	- parameter length 30 (containing the control data for the channels)
+	- parameter length 23 (seems static)
+

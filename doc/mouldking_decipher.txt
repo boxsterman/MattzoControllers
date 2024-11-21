@@ -1,0 +1,740 @@
+# Mouldking RC deciphering
+
+- ADV set data on sid 0x0 seeems to be used
+- 20 byte payload
+	- byte 11
+		- upper 4 bits (left hex letter): Channel A
+			- neutral: 0x9
+			- highest bit indicates direction: 0: up/forward, 1: down/backward
+	- byte 11, lower 4 bits (right hex letter): Channel B
+			- neutral: 0x4
+			- highest bit indicates direction: 0: right, 1: left
+	- byte 14, upper 4 bits (left hex letter): Channel C
+			- neutral: 0xB
+			- highest bit indicates direction: 0: up/forward, 1: down/backward
+	- byte 14, lower 4 bits (right hex letter): Channel D
+			- neutral: 0xE
+			- highest bit indicates direction: 1: right, 0: left
+
+
+
+
+
+
+
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77 2A 0X14B2 0X8A3E 0X6BED 0X7B48   MK 4-1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77 2A 0X14B2 0X8A3E 0X6BED 0X7B48   MK 4-1
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XC4B2 0X0ABE 0X39ED 0X0135 0X742A 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X04B2 0X0ABE 0X39ED 0X0135 0X3531 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XE4B2 0X0ABE 0X39ED 0X0135 0X17A9 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XE4B2 0X0ABE 0X39ED 0X0135 0X17A9 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X34B2 0X0ABE 0X39ED 0X0135 0XE37B 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XC4B2 0X0ABE 0X39ED 0X0135 0X742A 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XE4B2 0X0ABE 0X39ED 0X0135 0X17A9 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0XE4B2 0X0ABE 0X39ED 0X0135 0X17A9 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X84B2 0X0ABE 0X39ED 0X0135 0XB32C 
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X54B2 0X0ABE 0X39ED 0X0135 0X47FE 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X74B2 0X0ABE 0X39ED 0X0135 0X247D 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X54B2 0X0ABE 0X39ED 0X0135 0X47FE 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X34B2 0X0ABE 0X39ED 0X0135 0XE37B 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+
+
+A: Neutral, then up & let go
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+
+
+
+
+A: Neutral, then up slowly, let go to neutral
+													    F1	  	  F2	             F3    F1 bin
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X0ABE 0X39ED 0X0135 0X06E5  1001 0100  1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 04 B2 0X0ABE 0X39ED 0X0135 0X3531  0000 0100  0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 34 B2 0X0ABE 0X39ED 0X0135 0XE37B  0011 0100  3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 24 B2 0X0ABE 0X39ED 0X0135 0X56B2  0010 0100  2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 54 B2 0X0ABE 0X39ED 0X0135 0X47FE  0101 0100  5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 44 B2 0X0ABE 0X39ED 0X0135 0XF237  0100 0100  4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 74 B2 0X0ABE 0X39ED 0X0135 0X247D  0111 0100  7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 64 B2 0X0ABE 0X39ED 0X0135 0X91B4  0110 0100  6		max A+ (up)
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 74 B2 0X0ABE 0X39ED 0X0135 0X247D  
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 44 B2 0X0ABE 0X39ED 0X0135 0XF237 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 54 B2 0X0ABE 0X39ED 0X0135 0X47FE 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 24 B2 0X0ABE 0X39ED 0X0135 0X56B2 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 34 B2 0X0ABE 0X39ED 0X0135 0XE37B 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X0ABE 0X39ED 0X0135 0X06E5 									Neutral
+
+A: Neutral, then down
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X0ABE 0X39ED 0X0135 0X06E5  1001 0100 1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 84 B2 0X0ABE 0X39ED 0X0135 0XB32C  1000 0100 0 
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X B4 B2 0X0ABE 0X39ED 0X0135 0X6566  1011 0100 3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X A4 B2 0X0ABE 0X39ED 0X0135 0XD0AF  1010 0100 2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X D4 B2 0X0ABE 0X39ED 0X0135 0XC1E3  1101 0100 5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X C4 B2 0X0ABE 0X39ED 0X0135 0X742A  1100 0100 4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X F4 B2 0X0ABE 0X39ED 0X0135 0XA260  1111 	 7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X E4 B2 0X0ABE 0X39ED 0X0135 0X17A9  1110 0100 6  						max A- (down)
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X F4 B2 0X0ABE 0X39ED 0X0135 0XA260            7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X C4 B2 0X0ABE 0X39ED 0X0135 0X742A  1100 0100 4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X D4 B2 0X0ABE 0X39ED 0X0135 0XC1E3  1101 0100 5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X A4 B2 0X0ABE 0X39ED 0X0135 0XD0AF  1010 0100 2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X B4 B2 0X0ABE 0X39ED 0X0135 0X6566  1011 0100 3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 84 B2 0X0ABE 0X39ED 0X0135 0XB32C  1000 0100 0 
+
+
+B: Neutral, left (-), neutral
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X0ABE 0X39ED 0X0135 0X06E5 1001 0100 4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9D B2 0X0ABE 0X39ED 0X0135 0X47DC 1001 1101 5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9E B2 0X0ABE 0X39ED 0X0135 0XEFB2      1110 6
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9F B2 0X0ABE 0X39ED 0X0135 0X7067      1111 7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 98 B2 0X0ABE 0X39ED 0X0135 0XB77F      1000 0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 99 B2 0X0ABE 0X39ED 0X0135 0X28AA      1001 1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9A B2 0X0ABE 0X39ED 0X0135 0X80C4      1010 2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9B B2 0X0ABE 0X39ED 0X0135 0X1F11      1011 3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9A B2 0X0ABE 0X39ED 0X0135 0X80C4      1010 2
+    ...
+
+
+B:
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 9B B2 0X0ABE 0X39ED 0X0135 0X1F11  1001 1011 max B- (left)
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 93 B2 0X0ABE 0X39ED 0X0135 0XC1FD  1001 0011 max B+ (right)
+
+
+A+ max & B+ max
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 50 B2 0X0ABE 0X39ED 0X0135 0X2888  0101 0000 
+
+A- max & B- max
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X D8 B2 0X0ABE 0X39ED 0X0135 0X7079  1101 1000
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X C8 B2 0X0ABE 0X39ED 0X0135 0XC5B0  1100 1000
+
+C: Neutral, up & neutral											F2 						 F2 bin
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011 1110
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 1E 0X39ED 0X0135 0X8627  0001       1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 7E 0X39ED 0X0135 0X0196  0111       7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 4E 0X39ED 0X0135 0XC646  0010		2	max C+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 6E 0X39ED 0X0135 0X4326  0110       6
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 7E 0X39ED 0X0135 0X0196  0111       7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 1E 0X39ED 0X0135 0X8627  0001       1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 2E 0X39ED 0X0135 0X41F7  0010       2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011        
+
+C: Neutral, down & neutral											F2 						 F2 bin
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011 1110  3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A AE 0X39ED 0X0135 0X4455  1010       2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 9E 0X39ED 0X0135 0X8385  1001       1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 8E 0X39ED 0X0135 0XC135  1000       0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A FE 0X39ED 0X0135 0X0434  1111       7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A EE 0X39ED 0X0135 0X4684 			6
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A DE 0X39ED 0X0135 0X8154  1101       5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A CE 0X39ED 0X0135 0XC3E4  1100       4			max C-
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A DE 0X39ED 0X0135 0X8154             5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A EE 0X39ED 0X0135 0X4684  1110       6
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A FE 0X39ED 0X0135 0X0434             7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 8E 0X39ED 0X0135 0XC135  1000       0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A 9E 0X39ED 0X0135 0X8385  1001       1
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A AE 0X39ED 0X0135 0X4455             2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011
+
+D: Neutral, left (-) & neutral										F2 						 F2 bin
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011 1110
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B4 0X39ED 0X0135 0X2FEB       0100
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B1 0X39ED 0X0135 0X3B6C 	  0001		max D-
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B0 0X39ED 0X0135 0X3F47       0000
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B3 0X39ED 0X0135 0X333A       0011
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B5 0X39ED 0X0135 0X2BC0       0101
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B4 0X39ED 0X0135 0X2FEB       0100
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B7 0X39ED 0X0135 0X2396       0111
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5       
+
+D: Neutral, right (+) & neutral										F2 						 F2 bin
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5  1011 1110 6
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BF 0X39ED 0X0135 0X02CE       1111 7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BC 0X39ED 0X0135 0X0EB3       1100 4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BD 0X39ED 0X0135 0X0A98       1101 5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BA 0X39ED 0X0135 0X1649       1010 2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BB 0X39ED 0X0135 0X1262       1011 3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B8 0X39ED 0X0135 0X1E1F       1000 0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B9 0X39ED 0X0135 0X1A34       1001 1 max D+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A B8 0X39ED 0X0135 0X1E1F       1000 0
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BB 0X39ED 0X0135 0X1262       1011 3
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BA 0X39ED 0X0135 0X1649       1010 2
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BD 0X39ED 0X0135 0X0A98       1101 5
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BC 0X39ED 0X0135 0X0EB3       1100 4
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BF 0X39ED 0X0135 0X02CE       1111 7
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X 94 B2 0X 0A BE 0X39ED 0X0135 0X06E5       1110
+
+
+
+2024-11-17:
+
+	00000000: 3720 2000 0301 1C02 011A 020A 0C15 03C8  7  .............
+	00000010: 1901 B430 4227 FAFA 77B2 943E 0AED 3935  ...0B'..w..>..95
+	00000020: 0147 03                                  .G.
+
+Neutral
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0A3E 0X39ED 0X0135 0X0347 
+
+	00000000: 3720 2000 0301 1C02 011A 020A 0C15 03C8  7  .............
+	00000010: 1901 B430 4227 FAFA 77B2 94BE 0AED 3935  ...0B'..w.....95
+	00000020: 01E5 06                                  ...
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X94B2 0X0ABE 0X39ED 0X0135 0X06E5 
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77FA 0X64B2 0X0ABE 0X39ED 0X0135 0X91B4 
+
+
+
+
+===============================================================================
+=====  Sequence 1
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...  
+
+
+Set Ext ADV Parameters - Min/Max Interval: 30ms/30ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 30 ms
+	Primary Advertising Interval Max: 30 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1900 1300 3000 0030 0000 0701 0000  6 ....0..0......
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 30 (0x1E)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 26 (0x1A)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X772A 0X14B2 0X8A3E 0X6BED 0X7B48 
+
+00000000: 3720 1E00 0301 1A02 011A 020A 0C13 03C8  7 ..............
+00000010: 1901 B430 4227 FA2A 77B2 143E 8AED 6B48  ...0B'.*w..>..kH
+00000020: 7B                                       {
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+=====  Sequence 2
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 270 ms
+	Primary Advertising Interval Max: 270 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1900 1300 B001 00B0 0100 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 23 (0x17)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 19 (0x13)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	Apple Manufacturing Data
+	Length: 12 (0x0C)
+
+00000000: 3720 1700 0301 1302 011A 020A 0C0C FF4C  7 .............L
+00000010: 0010 077A 1F7E C026 4648                 ...z.~.&FH
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+
+=====  Sequence 3
+
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+
+Set Ext ADV Parameters - Min/Max Interval: 30ms/30ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 30 ms
+	Primary Advertising Interval Max: 30 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1900 1300 3000 0030 0000 0701 0000  6 ....0..0......
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 30 (0x1E)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 26 (0x1A)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X772A 0X14B2 0X8A3E 0X6BED 0X7B48 
+00000000: 3720 1E00 0301 1A02 011A 020A 0C13 03C8  7 ..............
+00000010: 1901 B430 4227 FA2A 77B2 143E 8AED 6B48  ...0B'.*w..>..kH
+00000020: 7B                                       {
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+	00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+
+=====  Sequence 4
+
+
+Set Ext Advertising Disabled  
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 2 (0x02)
+	Number Of Sets: 0
+00000000: 3920 0200 00                             9 ...
+
+Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x0
+	Advertising Event Properties: 0x13
+		Connectable: YES
+		Scannable: YES
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 270 ms
+	Primary Advertising Interval Max: 270 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 0
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1900 1300 B001 00B0 0100 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0000            ............
+
+Set Ext ADV Data - ADV Handle: 0x0  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 23 (0x17)
+	Advertising Handle (Set): 0x0
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 19 (0x13)
+	Flags: 0x1A
+		LE Limited General Discoverable Mode
+		Simultaneous LE and BR/EDR To Same Device Capable (Controller)
+		Simultaneous LE and BR/EDR to Same Device Capable (Host)
+	Transmit Power: 12
+	Apple Manufacturing Data
+	Length: 12 (0x0C)
+00000000: 3720 1700 0301 1302 011A 020A 0C0C FF4C  7 .............L
+00000010: 0010 077A 1F7E C026 4648                 ...z.~.&FH
+
+Set Ext Advertising Enabled - Handles: 0x0   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x0
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0100 0000 00                   9 .......
+
+
+Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	Opcode: 0x2036 (OGF: 0x08    OCF: 0x36)
+	Parameter Length: 25 (0x19)
+	Advertising Handle (Set): 0x3
+	Advertising Event Properties: 0x10
+		Connectable: NO
+		Scannable: NO
+		Directed: NO
+		High Duty Cycle Connectable: NO
+		Legacy PDU: YES
+		Anonymous Advertising: NO
+		Include Tx Power: NO
+	Primary Advertising Interval Min: 2000 ms
+	Primary Advertising Interval Max: 2000 ms
+	Primary Advertising Channel Map: 37 38 39 
+	Own Address Type: Random
+	Peer Address Type: Public
+	Peer Address: 00:00:00:00:00:00
+	Advertising Filter Policy: Process Scan And Connection Requests From All Devices
+	Advertising Tx Power: 127 dBm
+	Primary Advertising PHY: LE 1M
+	Secondary Advertising Max Skip: 0Secondary Advertising PHY: LE 2M
+	Advertising SID: 3
+	Scan Request Notification Enable: Disabled
+00000000: 3620 1903 1000 800C 0080 0C00 0701 0000  6 ..............
+00000010: 0000 0000 0000 7F01 0002 0300            ............
+
+Set Ext ADV Data - ADV Handle: 0x3  
+	Opcode: 0x2037 (OGF: 0x08    OCF: 0x37)
+	Parameter Length: 12 (0x0C)
+	Advertising Handle (Set): 0x3
+	Complete Extended Advertising Data
+	Fragment Preference: Disallow Or Minimize
+	Advertising Data Length: 8 (0x8)
+	Apple Manufacturing Data
+	Length: 7 (0x07)
+00000000: 3720 0C03 0301 0807 FF4C 0012 0200 00    7 .......L.....
+
+Set Ext Advertising Enabled - Handles: 0x3   
+	Opcode: 0x2039 (OGF: 0x08    OCF: 0x39)
+	Parameter Length: 6 (0x06)
+	Number Of Sets: 1
+	Handle: 0x3
+		Duration: 0 ms
+		Max Extended Advertising Events: 0
+00000000: 3920 0601 0103 0000 00                   9 .......
+
+
+======== Conclusions:
+- a repeating pattern of 
+	1. Set Ext Advertising Disabled  
+	2. Set Ext ADV Parameters - Min/Max Interval: 270ms/270ms - Handle: 0x0 - SID: 0  
+	3. Set Ext ADV Data - ADV Handle: 0x0  
+	4. Set Ext Advertising Enabled - Handles: 0x0   
+	5. Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
+	6. Set Ext ADV Data - ADV Handle: 0x3  
+	7. Set Ext Advertising Enabled - Handles: 0x3   
+- for 2. the min/max interval alternates between 270ms/270m and 30ms/30ms
+- for 3. the payload alternates between sequences:
+	- parameter length 30 (containing the control data for the channels)
+	- parameter length 23 (seems static)
+
+
+
+
+
+=========================
+
+
+
+
+
+
+
+
+
+	16 Bit UUIDs: 0X19C8 0XB401 0X4230 0XFA27 0X77 EA 0X14B2 0X8A3E 0XAB6D 0X9F9B   MK 6
+
+
+
+
+
+
+19C8 B401 4230 FA27 77FA 94B2 0ABE 39ED 0135 06E5
+19C8 B401 4230 FA27 77FA 04B2 0ABE 39ED 0135 3531
+19C8 B401 4230 FA27 77FA 34B2 0ABE 39ED 0135 E37B
+19C8 B401 4230 FA27 77FA 24B2 0ABE 39ED 0135 56B2
+19C8 B401 4230 FA27 77FA 54B2 0ABE 39ED 0135 47FE
+19C8 B401 4230 FA27 77FA 44B2 0ABE 39ED 0135 F237
+19C8 B401 4230 FA27 77FA 74B2 0ABE 39ED 0135 247D
+19C8 B401 4230 FA27 77FA 64B2 0ABE 39ED 0135 91B4
+19C8 B401 4230 FA27 77FA 74B2 0ABE 39ED 0135 247D
+19C8 B401 4230 FA27 77FA 44B2 0ABE 39ED 0135 F237
+19C8 B401 4230 FA27 77FA 54B2 0ABE 39ED 0135 47FE
+19C8 B401 4230 FA27 77FA 24B2 0ABE 39ED 0135 56B2
+19C8 B401 4230 FA27 77FA 34B2 0ABE 39ED 0135 E37B
+19C8 B401 4230 FA27 77FA 94B2 0ABE 39ED 0135 06E5
+19C8 B401 4230 FA27 77FA 94B2 0ABE 39ED 0135 06E5
+19C8 B401 4230 FA27 77FA 84B2 0ABE 39ED 0135 B32C
+19C8 B401 4230 FA27 77FA B4B2 0ABE 39ED 0135 6566
+19C8 B401 4230 FA27 77FA A4B2 0ABE 39ED 0135 D0AF
+19C8 B401 4230 FA27 77FA D4B2 0ABE 39ED 0135 C1E3
+19C8 B401 4230 FA27 77FA C4B2 0ABE 39ED 0135 742A
+19C8 B401 4230 FA27 77FA F4B2 0ABE 39ED 0135 A260
+19C8 B401 4230 FA27 77FA E4B2 0ABE 39ED 0135 17A9
+19C8 B401 4230 FA27 77FA F4B2 0ABE 39ED 0135 A260
+19C8 B401 4230 FA27 77FA C4B2 0ABE 39ED 0135 742A
+19C8 B401 4230 FA27 77FA D4B2 0ABE 39ED 0135 C1E3
+19C8 B401 4230 FA27 77FA A4B2 0ABE 39ED 0135 D0AF
+19C8 B401 4230 FA27 77FA B4B2 0ABE 39ED 0135 6566
+19C8 B401 4230 FA27 77FA 84B2 0ABE 39ED 0135 B32C
+19C8 B401 4230 FA27 77FA 94B2 0ABE 39ED 0135 06E5
+19C8 B401 4230 FA27 77FA 9DB2 0ABE 39ED 0135 47DC
+19C8 B401 4230 FA27 77FA 9EB2 0ABE 39ED 0135 EFB2
+19C8 B401 4230 FA27 77FA 9FB2 0ABE 39ED 0135 7067
+19C8 B401 4230 FA27 77FA 98B2 0ABE 39ED 0135 B77F
+19C8 B401 4230 FA27 77FA 99B2 0ABE 39ED 0135 28AA
+19C8 B401 4230 FA27 77FA 9AB2 0ABE 39ED 0135 80C4
+19C8 B401 4230 FA27 77FA 9BB2 0ABE 39ED 0135 1F11
+19C8 B401 4230 FA27 77FA 9AB2 0ABE 39ED 0135 80C4
+19C8 B401 4230 FA27 77FA 9BB2 0ABE 39ED 0135 1F11
+19C8 B401 4230 FA27 77FA 93B2 0ABE 39ED 0135 C1FD
+19C8 B401 4230 FA27 77FA 50B2 0ABE 39ED 0135 2888
+19C8 B401 4230 FA27 77FA D8B2 0ABE 39ED 0135 7079
+19C8 B401 4230 FA27 77FA C8B2 0ABE 39ED 0135 C5B0
+
+
+
+
