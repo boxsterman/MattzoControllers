@@ -11,10 +11,10 @@ do
 	hcitool cmd 0x08 0x36 19 00 13 00 30 00 00 30 00 00 07 01 00 00 00 00 00 00 00 00 7F 01 00 02 00 00
 
 	# msg 3: Set Ext ADV Data - ADV Handle: 0x0  
-	hcitool cmd 0x08 0x37 1E 00 03 01 1A 02 01 1A 02 0A 0C 13 03 C8 19 01 B4 30 42 27 FA 2A 77 B2 14 3E 8A ED 6B 48 
+	hcitool cmd 0x08 0x37 1E 00 03 01 1A 02 01 1A 02 0A 0C 13 03 C8 19 01 B4 30 42 27 FA 2A 77 B2 14 3E 8A ED 6B 48 7B
 
 	# msg 4: Set Ext Advertising Enabled - Handles: 0x0   
-	hcitool cmd 0x08 0x39 06 01 01 00 000 0 00 
+	hcitool cmd 0x08 0x39 06 01 01 00 00 00 00 
 
 	# msg 5: Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
 	hcitool cmd 0x08 0x36 19 03 10 00 80 0C 00 80 0C 00 07 01 00 00 00 00 00 00 00 00 7F 01 00 02 03 00 
@@ -38,7 +38,7 @@ do
 	hcitool cmd 0x08 0x37 17 00 03 01 13 02 01 1A 02 0A 0C 0C FF 4C 00 10 07 7A 1F 7E C0 26 46 48 
 
 	# msg 4: Set Ext Advertising Enabled - Handles: 0x0   
-	hcitool cmd 0x08 0x39 06 01 01 00 000 0 00 
+	hcitool cmd 0x08 0x39 06 01 01 00 00 00 00 
 
 	# msg 5: Set Ext ADV Parameters - Min/Max Interval: 2000ms/2000ms - Handle: 0x3 - SID: 3  
 	hcitool cmd 0x08 0x36 19 03 10 00 80 0C 00 80 0C 00 07 01 00 00 00 00 00 00 00 00 7F 01 00 02 03 00 
